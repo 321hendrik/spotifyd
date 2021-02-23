@@ -20,6 +20,14 @@ __To read about how to install and configure Spotifyd, take a look at our [wiki]
 - [Contributing](#contributing)
 - [Credits](#credits)
 
+## MacOS install
+
+- Clone this repo
+- Install [Rust-Toolchain](https://rustup.rs/)
+- Install dependencies `brew install dbus pkg-config portaudio`
+- Build `cargo build --release --no-default-features --features="rodio_backend"`
+- Install `cargo install --path . --locked`
+
 ## Common issues
 
 - Spotifyd will not work without Spotify Premium
